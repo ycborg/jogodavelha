@@ -118,6 +118,7 @@ int main(void) {
         printf("Deseja jogar novamente?\n");
         printf("  1 = sim | 2 = nao\n > ");
         scanf("%i", &resp);
+        if (resp == 1) inicializarTabuleiro(&meuTabuleiro);
         system("cls || clear");
 
     } while (resp == 1);
